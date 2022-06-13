@@ -12,7 +12,7 @@ XXX,               &bt BT_CLR,        XXX,               XXX,               XXX,
 
 
 #define MIRYOKU_LAYER_FGC \
-&kpN1,             &kpN2,             &kpN3,             &kpN4,             &kpN5,                   &kpN6,             &kp KP_NLCK,       &kp KP_SLASH,      &kp KP_ASTERISK,   &kp U,   \
+&kp N1,            &kp N2,            &kp N3,            &kp N4,            &kp N5,                  &kp N6,            &kp KP_NLCK,       &kp KP_SLASH,      &kp KP_ASTERISK,   &kp U,   \
 &kp Q,             &kp W,             &kp E,             &kp R,             &kp T,                   &kp Y,             &kp KP_N7,         &kp KP_N8,         &kp KP_N9,         &kp Y,   \
 &kp A,             &kp S,             &kp D,             &kp F,             &kp G,                   &kp H,             &kp KP_N4,         &kp KP_N5,         &kp KP_N6,         &kp KP_DOT,   \
 &kp TAB,           &kp LSHFT,         &kp LALT,          &kp SPC,           &kp DOWN,                &kp UP,            &kp RIGHT,         &kp F13,           &kp J,              &kp ENTER
