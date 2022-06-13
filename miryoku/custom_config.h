@@ -14,6 +14,12 @@
 &lt U_BUTTON Z,    &hm RALT X,        &kp C,             &kp V,             &kp B,             &kp N,             &kp M,             &kp COMMA,         &hm RALT DOT,      &lt U_BUTTON SLASH,\
 &kp P,              U_NP,              &lt U_MEDIA ESC,   &lt U_NAV SPC,     &lt U_MOUSE TAB,   &lt U_SYM RET,     &lt U_NUM BSPC,    &lt U_FUN DEL,     U_NP,              U_NP
 
+#define MIRYOKU_LAYER_BASE \
+&kp Q,             &kp W,             &kp F,             &kp P,             &kp B,             &kp J,             &kp L,             &kp U,             &kp Y,             &kp SQT,           \
+&hm LGUI A,        &hm LALT R,        &hm LCTRL S,       &hm LSHFT T,       &kp G,             &kp M,             &hm LSHFT N,       &hm LCTRL E,       &hm LALT I,        &hm LGUI O,        \
+&lt U_BUTTON Z,    &hm RALT X,        &kp C,             &kp D,             &kp V,             &kp K,             &kp H,             &kp COMMA,         &hm RALT DOT,      &lt U_BUTTON SLASH,\
+&kp RA(L),              U_NP,              &lt U_MEDIA ESC,   &lt U_NAV SPC,     &lt U_MOUSE TAB,   &lt U_SYM RET,     &lt U_NUM BSPC,    &lt U_FUN DEL,     &kp RA(W),              &kp RA(Z)
+
 // #define MIRYOKU_LAYER_CFG \
 // &mo 10,            &none,             &none,             &none,             &none,             &reset,            &mo 10,            &none,             &none, &none, &none, &tog 1,\
 // &none,             &none,             &none,             &none,             &none,             &none,             &none,             &none,             &none, &none, &none, &tog 2,\
@@ -32,11 +38,11 @@
      K00, K01, K02, K03, K04,      K05, K06, K07, K08, K09, \
      K10, K11, K12, K13, K14,      K15, K16, K17, K18, K19, \
      K20, K21, K22, K23, K24,      K25, K26, K27, K28, K29, \
-     K30, N31, K32, K33, K34,      K35, K36, K37, N38, N39 \
+     K30, K31, K32, K33, K34,      K35, K36, K37, K38, K39 \
 ) \
-&mo 10     K00  K01  K02  K03  K04       K05  K06  K07  K08  K09  &mo 11 \
-&kp RA(L)  K10  K11  K12  K13  K14       K15  K16  K17  K18  K19  &kp RA(W) \
-K30        K20  K21  K22  K23  K24       K25  K26  K27  K28  K29  &kp RA(Z) \
+&mo 10   K00  K01  K02  K03  K04       K05  K06  K07  K08  K09  XXX \
+K30      K10  K11  K12  K13  K14       K15  K16  K17  K18  K19  K38 \
+K31      K20  K21  K22  K23  K24       K25  K26  K27  K28  K29  K39 \
                      K32  K33  K34       K35  K36  K37
 
 #define MIRYOKU_KLUDGE_TOPROWCOMBOS_LEFTPINKIE 2 3
