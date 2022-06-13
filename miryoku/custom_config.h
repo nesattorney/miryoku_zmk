@@ -8,6 +8,12 @@
 &lt U_BUTTON Z,    &hm RALT X,        &kp C,             &kp V,             &kp B,             &kp N,             &kp M,             &kp COMMA,         &hm RALT DOT,      &lt U_BUTTON SLASH,\
 &kp P,              U_NP,              &lt U_MEDIA ESC,   &lt U_NAV SPC,     &lt U_MOUSE TAB,   &lt U_SYM RET,     &lt U_NUM BSPC,    &lt U_FUN DEL,     U_NP,              U_NP
 
+#define MIRYOKU_LAYER_FGC \
+&kp Q,             &kp W,             &kp E,             &kp R,             &kp T,             &kp Y,             &kp U,             &kp I,             &kp O,             &kp P,             \
+&hm LGUI A,        &hm LALT S,        &hm LCTRL D,       &hm LSHFT F,       &kp G,             &kp H,             &hm LSHFT J,       &hm LCTRL K,       &hm LALT L,        &hm LGUI SQT,      \
+&lt U_BUTTON Z,    &hm RALT X,        &kp C,             &kp V,             &kp B,             &kp N,             &kp M,             &kp COMMA,         &hm RALT DOT,      &lt U_BUTTON SLASH,\
+&kp P,              U_NP,              &lt U_MEDIA ESC,   &lt U_NAV SPC,     &lt U_MOUSE TAB,   &lt U_SYM RET,     &lt U_NUM BSPC,    &lt U_FUN DEL,     U_NP,              U_NP
+
 // #define MIRYOKU_LAYER_CFG \
 // &mo 10,            &none,             &none,             &none,             &none,             &reset,            &mo 10,            &none,             &none, &none, &none, &tog 1,\
 // &none,             &none,             &none,             &none,             &none,             &none,             &none,             &none,             &none, &none, &none, &tog 2,\
@@ -16,6 +22,8 @@
 
 
 #define MIRYOKU_LAYERMAPPING_CFG MIRYOKU_MAPPING
+#define MIRYOKU_LAYERMAPPING_FGC MIRYOKU_MAPPING
+
 
 //MIRYOKU LAYOUTMAPPING CORNE
 #define XXX &none
@@ -26,7 +34,7 @@
      K20, K21, K22, K23, K24,      K25, K26, K27, K28, K29, \
      K30, N31, K32, K33, K34,      K35, K36, K37, N38, N39 \
 ) \
-&mo 10     K00  K01  K02  K03  K04       K05  K06  K07  K08  K09  XXX \
+&mo 10     K00  K01  K02  K03  K04       K05  K06  K07  K08  K09  &mo 11 \
 &kp RA(L)  K10  K11  K12  K13  K14       K15  K16  K17  K18  K19  &kp RA(W) \
 K30        K20  K21  K22  K23  K24       K25  K26  K27  K28  K29  &kp RA(Z) \
                      K32  K33  K34       K35  K36  K37
@@ -58,6 +66,7 @@ MIRYOKU_X(NUM,    "Num") \
 MIRYOKU_X(SYM,    "Sym") \
 MIRYOKU_X(FUN,    "Fun") \
 MIRYOKU_X(CFG,    "Config") \
+MIRYOKU_X(FGC,    "FGC") \
 
 #define U_BASE   0
 #define U_EXTRA  1
@@ -70,3 +79,4 @@ MIRYOKU_X(CFG,    "Config") \
 #define U_SYM    8
 #define U_FUN    9
 #define U_CFG    10
+#define U_FGC    11
