@@ -29,9 +29,9 @@ MIRYOKU_X(QWERTY, "QWERTY") \
 #define U_NUM    7
 #define U_SYM    8
 #define U_FUN    9
-#define U_CFG    10
-#define U_FGC    11
-#define U_QWERTY 12
+#define U_FGC    10
+#define U_QWERTY 11
+#define U_CFG    12
 
 
 /*LAYERS*/
@@ -42,19 +42,12 @@ MIRYOKU_X(QWERTY, "QWERTY") \
 &lt U_BUTTON Z,    &hm RALT X,        &kp C,             &kp D,             &kp V,             &kp K,             &kp H,             &kp COMMA,         &hm RALT DOT,      &lt U_BUTTON SLASH,\
 &kp RA(L),         U_NP,              &lt U_MEDIA ESC,   &lt U_NAV SPC,     &lt U_MOUSE TAB,   &lt U_SYM RET,     &lt U_NUM BSPC,    &lt U_FUN DEL,     &kp RA(W),         &kp RA(Z)
 
-//Config layer
-#define MIRYOKU_LAYER_CFG \
-XXX,               XXX,               XXX,               XXX,               &reset,                  &tog U_FGC,        &tog U_QWERTY,     XXX,               XXX,               XXX,   \
-XXX,               XXX,               XXX,               XXX,               XXX,                     XXX,               XXX,               XXX,               XXX,               XXX,   \
-&bt BT_SEL 0,      &bt BT_SEL 1,      &bt BT_SEL 2,      &bt BT_SEL 3,      &bt BT_SEL 4,            XXX,               XXX,               XXX,               XXX,               XXX,   \
-XXX,               &bt BT_CLR,        XXX,               XXX,               XXX,                     XXX,               XXX,               XXX,               XXX,               XXX
-
 //FGC layer
 #define MIRYOKU_LAYER_FGC \
 &kp N1,            &kp N2,            &kp N3,            &kp N4,            &kp N5,                  &kp N6,            &kp KP_NLCK,       &kp KP_SLASH,      &kp KP_ASTERISK,   &kp U,   \
-&kp Q,             &kp W,             &kp E,             &kp R,             &kp T,                   &kp Y,             &kp KP_N7,         &kp KP_N8,         &kp KP_N9,         &kp Y,   \
+&kp Q,             &kp W,             &kp E,             &kp R,             &kp T,                   &kp Y,             &kp KP_N7,         &kp KP_N8,         &kp KP_N9,         &kp KP_PLUS,   \
 &kp A,             &kp S,             &kp D,             &kp F,             &kp G,                   &kp H,             &kp KP_N4,         &kp KP_N5,         &kp KP_N6,         &kp KP_DOT,   \
-&kp TAB,           &kp LSHFT,         &kp LALT,          &kp SPC,           &kp DOWN,                &kp UP,            &kp RIGHT,         &kp F13,           &kp J,              &kp ENTER
+&kp TAB,           &kp LSHFT,         &kp LALT,          &kp SPC,           &kp DOWN,                &kp UP,            &kp RIGHT,         &kp F13,           &kp J,             &kp ENTER
 
 //Qwerty layer with norwegian letters
 #define MIRYOKU_LAYER_QWERTY \
@@ -63,9 +56,16 @@ XXX,               &bt BT_CLR,        XXX,               XXX,               XXX,
 &lt U_BUTTON Z,    &hm RALT X,        &kp C,             &kp V,             &kp B,             &kp N,             &kp M,             &kp COMMA,         &hm RALT DOT,      &lt U_BUTTON SLASH,\
 &kp RA(L),         U_NP,              &lt U_MEDIA ESC,   &lt U_NAV SPC,     &lt U_MOUSE TAB,   &lt U_SYM RET,     &lt U_NUM BSPC,    &lt U_FUN DEL,     &kp RA(W),         &kp RA(Z)
 
-#define MIRYOKU_LAYERMAPPING_CFG MIRYOKU_MAPPING
+//Config layer
+#define MIRYOKU_LAYER_CFG \
+XXX,               XXX,               XXX,               XXX,               &reset,                  &tog U_FGC,        &tog U_QWERTY,     XXX,               XXX,               XXX,   \
+XXX,               XXX,               XXX,               XXX,               XXX,                     XXX,               XXX,               XXX,               XXX,               XXX,   \
+&bt BT_SEL 0,      &bt BT_SEL 1,      &bt BT_SEL 2,      &bt BT_SEL 3,      &bt BT_SEL 4,            XXX,               XXX,               XXX,               XXX,               XXX,   \
+XXX,               &bt BT_CLR,        XXX,               XXX,               XXX,                     XXX,               XXX,               XXX,               XXX,               XXX
+
 #define MIRYOKU_LAYERMAPPING_FGC MIRYOKU_MAPPING
 #define MIRYOKU_LAYERMAPPING_QWERTY MIRYOKU_MAPPING
+#define MIRYOKU_LAYERMAPPING_CFG MIRYOKU_MAPPING
 
 
 /*MAPPING*/
