@@ -5,28 +5,17 @@
 
 //QWERTY LAYER TO BE ADDED
 #define MIRYOKU_LAYER_CFG \
-XXX,               XXX,               XXX,               XXX,               &reset,                  &tog 11,           &tog 12,           XXX,               XXX,               XXX,   \
+XXX,               XXX,               XXX,               XXX,               &reset,                  &tog 10,           &tog 10,           XXX,               XXX,               XXX,   \
 XXX,               XXX,               XXX,               XXX,               XXX,                     XXX,               XXX,               XXX,               XXX,               XXX,   \
 &bt BT_SEL 0,      &bt BT_SEL 1,      &bt BT_SEL 2,      &bt BT_SEL 3,      &bt BT_SEL 4,            XXX,               XXX,               XXX,               XXX,               XXX,   \
 XXX,               &bt BT_CLR,        XXX,               XXX,               XXX,                     XXX,               XXX,               XXX,               XXX,               XXX
 
-//    &mo 10      &none        &none        &none        &none        &reset                &mo 10 &none &none &none &none &tog 1
-//    &none      &none        &none        &none        &none        &none                  &none &none &none &none &none &tog 2
-//    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4           &none &none &none &none &none &none
-//                                                              &none &none &none           &none &none &none
 
-
-#define MIRYOKU_LAYER_FGC \
-&kpN1,             &kpN2,             &kpN3,             &kpN4,             &kpN5,                   &kpN6,             &kp KP_NLCK,       &kp KP_SLASH,      &kp KP_ASTERISK,   &kp U,   \
-&kp Q,             &kp W,             &kp E,             &kp R,             &kp T,                   &kp Y,             &kp KP_N7,         &kp KP_N8,         &kp KP_N9,         &kp Y,   \
-&kp A,             &kp S,             &kp D,             &kp F,             &kp G,                   &kp H,             &kp KP_N4,         &kp KP_N5,         &kp KP_N6,         &kp KP_DOT,   \
-&kp TAB,           &kp LSHFT,         &kp LALT,          &kp SPC,           &kp DOWN,                &kp UP,            &kp RIGHT,         &kp F13,           &kp J,              &kp ENTER
-
-//    &mo 10    &kp N1 &kp N2 &kp N3 &kp N4 &kp N5    &kp N6 &kp KP_NLCK &kp KP_SLASH    &kp KP_ASTERISK &kp U           &kp KP_MINUS
-//    &kp TAB   &kp Q  &kp W  &kp E  &kp R  &kp T    &kp Y &kp KP_N7   &kp KP_N8       &kp KP_N9       &kp KP_PLUS     &kp J
-//    &kp LSHFT &kp A  &kp S  &kp D  &kp F  &kp G    &kp H &kp KP_N4   &kp KP_N5       &kp KP_N6       &kp KP_DOT      &kp ENTER
-//                     &kp LALT  &kp SPC &kp DOWN    &kp UP &kp RIGHT &kp F13
- 
+// #define MIRYOKU_LAYER_FGC \
+// &kpN1,             &kpN2,             &kpN3,             &kpN4,             &kpN5,                   &kpN6,             &kp KP_NLCK,       &kp KP_SLASH,      &kp KP_ASTERISK,   &kp U,   \
+// &kp Q,             &kp W,             &kp E,             &kp R,             &kp T,                   &kp Y,             &kp KP_N7,         &kp KP_N8,         &kp KP_N9,         &kp Y,   \
+// &kp A,             &kp S,             &kp D,             &kp F,             &kp G,                   &kp H,             &kp KP_N4,         &kp KP_N5,         &kp KP_N6,         &kp KP_DOT,   \
+// &kp TAB,           &kp LSHFT,         &kp LALT,          &kp SPC,           &kp DOWN,                &kp UP,            &kp RIGHT,         &kp F13,           &kp J,              &kp ENTER
 
 //Colemak mod DH with norwegian letters
 #define MIRYOKU_LAYER_BASE \
@@ -36,22 +25,16 @@ XXX,               &bt BT_CLR,        XXX,               XXX,               XXX,
 &kp RA(L),         U_NP,              &lt U_MEDIA ESC,   &lt U_NAV SPC,     &lt U_MOUSE TAB,   &lt U_SYM RET,     &lt U_NUM BSPC,    &lt U_FUN DEL,     &kp RA(W),         &kp RA(Z)
 
 
-#define MIRYOKU_LAYER_QWERTY \
-&kp Q,             &kp W,             &kp E,             &kp R,             &kp T,             &kp Y,             &kp U,             &kp I,             &kp O,             &kp P,             \
-&hm LGUI A,        &hm LALT S,        &hm LCTRL D,       &hm LSHFT F,       &kp G,             &kp H,             &hm LSHFT J,       &hm LCTRL K,       &hm LALT L,        &hm LGUI SQT,      \
-&lt U_BUTTON Z,    &hm RALT X,        &kp C,             &kp V,             &kp B,             &kp N,             &kp M,             &kp COMMA,         &hm RALT DOT,      &lt U_BUTTON SLASH,\
-&kp RA(L),         U_NP,              &lt U_MEDIA ESC,   &lt U_NAV SPC,     &lt U_MOUSE TAB,   &lt U_SYM RET,     &lt U_NUM BSPC,    &lt U_FUN DEL,     &kp RA(W),         &kp RA(Z)
-
-
-// #define MIRYOKU_LAYER_CFG \
-// &mo 10,            &none,             &none,             &none,             &none,             &reset,            &mo 10,            &none,             &none, &none, &none, &tog 1,\
-// &none,             &none,             &none,             &none,             &none,             &none,             &none,             &none,             &none, &none, &none, &tog 2,\
-// &bt BT_CLR,        &bt BT_SEL 0,      &bt BT_SEL 1,      &bt BT_SEL 2,      &bt BT_SEL 3,     &bt BT_SEL 4,       &none,             &none,             &none, &none, &none, &none,\
-//                                                              &none, &none, &none,           &none, &none, &none
+// #define MIRYOKU_LAYER_QWERTY \
+// &kp Q,             &kp W,             &kp E,             &kp R,             &kp T,             &kp Y,             &kp U,             &kp I,             &kp O,             &kp P,             \
+// &hm LGUI A,        &hm LALT S,        &hm LCTRL D,       &hm LSHFT F,       &kp G,             &kp H,             &hm LSHFT J,       &hm LCTRL K,       &hm LALT L,        &hm LGUI SQT,      \
+// &lt U_BUTTON Z,    &hm RALT X,        &kp C,             &kp V,             &kp B,             &kp N,             &kp M,             &kp COMMA,         &hm RALT DOT,      &lt U_BUTTON SLASH,\
+// &kp RA(L),         U_NP,              &lt U_MEDIA ESC,   &lt U_NAV SPC,     &lt U_MOUSE TAB,   &lt U_SYM RET,     &lt U_NUM BSPC,    &lt U_FUN DEL,     &kp RA(W),         &kp RA(Z)
 
 
 #define MIRYOKU_LAYERMAPPING_CFG MIRYOKU_MAPPING
-#define MIRYOKU_LAYERMAPPING_FGC MIRYOKU_MAPPING
+// #define MIRYOKU_LAYERMAPPING_FGC MIRYOKU_MAPPING
+// #define MIRYOKU_LAYERMAPPING_QWERTY MIRYOKU_MAPPING
 
 
 //MIRYOKU LAYOUTMAPPING CORNE
@@ -65,7 +48,7 @@ XXX,               &bt BT_CLR,        XXX,               XXX,               XXX,
 &mo 10   K00  K01  K02  K03  K04       K05  K06  K07  K08  K09  &kp KP_MINUS \
 K30      K10  K11  K12  K13  K14       K15  K16  K17  K18  K19  K38 \
 K31      K20  K21  K22  K23  K24       K25  K26  K27  K28  K29  K39 \
-                     K32  K33  K34       K35  K36  K37
+                   K32  K33  K34       K35  K36  K37
 
 #define MIRYOKU_KLUDGE_TOPROWCOMBOS_LEFTPINKIE 2 3
 #define MIRYOKU_KLUDGE_TOPROWCOMBOS_LEFTINNERINDEX 3 4
@@ -94,8 +77,8 @@ MIRYOKU_X(NUM,    "Num") \
 MIRYOKU_X(SYM,    "Sym") \
 MIRYOKU_X(FUN,    "Fun") \
 MIRYOKU_X(CFG,    "Config") \
-MIRYOKU_X(FGC,    "FGC") \
-MIRYOKU_X(QWERTY, "QWERTY") \
+// MIRYOKU_X(FGC,    "FGC") \
+// MIRYOKU_X(QWERTY, "QWERTY") \
 
 #define U_BASE   0
 #define U_EXTRA  1
@@ -108,5 +91,5 @@ MIRYOKU_X(QWERTY, "QWERTY") \
 #define U_SYM    8
 #define U_FUN    9
 #define U_CFG    10
-#define U_FGC    11
-#define U_QWERTY 12
+// #define U_FGC    11
+// #define U_QWERTY 12
