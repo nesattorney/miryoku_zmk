@@ -15,9 +15,9 @@ MIRYOKU_X(MEDIA,  "Media") \
 MIRYOKU_X(NUM,    "Num") \
 MIRYOKU_X(SYM,    "Sym") \
 MIRYOKU_X(FUN,    "Fun") \
-MIRYOKU_X(CFG,    "Config") \
 MIRYOKU_X(FGC,    "FGC") \
 MIRYOKU_X(QWERTY, "QWERTY") \
+MIRYOKU_X(CFG,    "Config") \
 
 #define U_BASE   0
 #define U_EXTRA  1
