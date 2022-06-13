@@ -5,7 +5,7 @@
 
 //QWERTY LAYER TO BE ADDED
 #define MIRYOKU_LAYER_CFG \
-XXX,               XXX,               XXX,               XXX,               &reset,                  &tog 11,           &tog 10,           XXX,               XXX,               XXX,   \
+XXX,               XXX,               XXX,               XXX,               &reset,                  &tog 11,           &tog 12,           XXX,               XXX,               XXX,   \
 XXX,               XXX,               XXX,               XXX,               XXX,                     XXX,               XXX,               XXX,               XXX,               XXX,   \
 &bt BT_SEL 0,      &bt BT_SEL 1,      &bt BT_SEL 2,      &bt BT_SEL 3,      &bt BT_SEL 4,            XXX,               XXX,               XXX,               XXX,               XXX,   \
 XXX,               &bt BT_CLR,        XXX,               XXX,               XXX,                     XXX,               XXX,               XXX,               XXX,               XXX
@@ -25,16 +25,16 @@ XXX,               &bt BT_CLR,        XXX,               XXX,               XXX,
 &kp RA(L),         U_NP,              &lt U_MEDIA ESC,   &lt U_NAV SPC,     &lt U_MOUSE TAB,   &lt U_SYM RET,     &lt U_NUM BSPC,    &lt U_FUN DEL,     &kp RA(W),         &kp RA(Z)
 
 
-// #define MIRYOKU_LAYER_QWERTY \
-// &kp Q,             &kp W,             &kp E,             &kp R,             &kp T,             &kp Y,             &kp U,             &kp I,             &kp O,             &kp P,             \
-// &hm LGUI A,        &hm LALT S,        &hm LCTRL D,       &hm LSHFT F,       &kp G,             &kp H,             &hm LSHFT J,       &hm LCTRL K,       &hm LALT L,        &hm LGUI SQT,      \
-// &lt U_BUTTON Z,    &hm RALT X,        &kp C,             &kp V,             &kp B,             &kp N,             &kp M,             &kp COMMA,         &hm RALT DOT,      &lt U_BUTTON SLASH,\
-// &kp RA(L),         U_NP,              &lt U_MEDIA ESC,   &lt U_NAV SPC,     &lt U_MOUSE TAB,   &lt U_SYM RET,     &lt U_NUM BSPC,    &lt U_FUN DEL,     &kp RA(W),         &kp RA(Z)
+#define MIRYOKU_LAYER_QWERTY \
+&kp Q,             &kp W,             &kp E,             &kp R,             &kp T,             &kp Y,             &kp U,             &kp I,             &kp O,             &kp P,             \
+&hm LGUI A,        &hm LALT S,        &hm LCTRL D,       &hm LSHFT F,       &kp G,             &kp H,             &hm LSHFT J,       &hm LCTRL K,       &hm LALT L,        &hm LGUI SQT,      \
+&lt U_BUTTON Z,    &hm RALT X,        &kp C,             &kp V,             &kp B,             &kp N,             &kp M,             &kp COMMA,         &hm RALT DOT,      &lt U_BUTTON SLASH,\
+&kp RA(L),         U_NP,              &lt U_MEDIA ESC,   &lt U_NAV SPC,     &lt U_MOUSE TAB,   &lt U_SYM RET,     &lt U_NUM BSPC,    &lt U_FUN DEL,     &kp RA(W),         &kp RA(Z)
 
 
 #define MIRYOKU_LAYERMAPPING_CFG MIRYOKU_MAPPING
 #define MIRYOKU_LAYERMAPPING_FGC MIRYOKU_MAPPING
-// #define MIRYOKU_LAYERMAPPING_QWERTY MIRYOKU_MAPPING
+#define MIRYOKU_LAYERMAPPING_QWERTY MIRYOKU_MAPPING
 
 
 //MIRYOKU LAYOUTMAPPING CORNE
@@ -78,7 +78,7 @@ MIRYOKU_X(SYM,    "Sym") \
 MIRYOKU_X(FUN,    "Fun") \
 MIRYOKU_X(CFG,    "Config") \
 MIRYOKU_X(FGC,    "FGC") \
-// MIRYOKU_X(QWERTY, "QWERTY") \
+MIRYOKU_X(QWERTY, "QWERTY") \
 
 #define U_BASE   0
 #define U_EXTRA  1
@@ -92,4 +92,4 @@ MIRYOKU_X(FGC,    "FGC") \
 #define U_FUN    9
 #define U_CFG    10
 #define U_FGC    11
-// #define U_QWERTY 12
+#define U_QWERTY 12
