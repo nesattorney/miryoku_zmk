@@ -5,17 +5,17 @@
 
 //QWERTY LAYER TO BE ADDED
 #define MIRYOKU_LAYER_CFG \
-XXX,               XXX,               XXX,               XXX,               &reset,                  &tog 10,           &tog 10,           XXX,               XXX,               XXX,   \
+XXX,               XXX,               XXX,               XXX,               &reset,                  &tog 11,           &tog 10,           XXX,               XXX,               XXX,   \
 XXX,               XXX,               XXX,               XXX,               XXX,                     XXX,               XXX,               XXX,               XXX,               XXX,   \
 &bt BT_SEL 0,      &bt BT_SEL 1,      &bt BT_SEL 2,      &bt BT_SEL 3,      &bt BT_SEL 4,            XXX,               XXX,               XXX,               XXX,               XXX,   \
 XXX,               &bt BT_CLR,        XXX,               XXX,               XXX,                     XXX,               XXX,               XXX,               XXX,               XXX
 
 
-// #define MIRYOKU_LAYER_FGC \
-// &kpN1,             &kpN2,             &kpN3,             &kpN4,             &kpN5,                   &kpN6,             &kp KP_NLCK,       &kp KP_SLASH,      &kp KP_ASTERISK,   &kp U,   \
-// &kp Q,             &kp W,             &kp E,             &kp R,             &kp T,                   &kp Y,             &kp KP_N7,         &kp KP_N8,         &kp KP_N9,         &kp Y,   \
-// &kp A,             &kp S,             &kp D,             &kp F,             &kp G,                   &kp H,             &kp KP_N4,         &kp KP_N5,         &kp KP_N6,         &kp KP_DOT,   \
-// &kp TAB,           &kp LSHFT,         &kp LALT,          &kp SPC,           &kp DOWN,                &kp UP,            &kp RIGHT,         &kp F13,           &kp J,              &kp ENTER
+#define MIRYOKU_LAYER_FGC \
+&kpN1,             &kpN2,             &kpN3,             &kpN4,             &kpN5,                   &kpN6,             &kp KP_NLCK,       &kp KP_SLASH,      &kp KP_ASTERISK,   &kp U,   \
+&kp Q,             &kp W,             &kp E,             &kp R,             &kp T,                   &kp Y,             &kp KP_N7,         &kp KP_N8,         &kp KP_N9,         &kp Y,   \
+&kp A,             &kp S,             &kp D,             &kp F,             &kp G,                   &kp H,             &kp KP_N4,         &kp KP_N5,         &kp KP_N6,         &kp KP_DOT,   \
+&kp TAB,           &kp LSHFT,         &kp LALT,          &kp SPC,           &kp DOWN,                &kp UP,            &kp RIGHT,         &kp F13,           &kp J,              &kp ENTER
 
 //Colemak mod DH with norwegian letters
 #define MIRYOKU_LAYER_BASE \
@@ -33,7 +33,7 @@ XXX,               &bt BT_CLR,        XXX,               XXX,               XXX,
 
 
 #define MIRYOKU_LAYERMAPPING_CFG MIRYOKU_MAPPING
-// #define MIRYOKU_LAYERMAPPING_FGC MIRYOKU_MAPPING
+#define MIRYOKU_LAYERMAPPING_FGC MIRYOKU_MAPPING
 // #define MIRYOKU_LAYERMAPPING_QWERTY MIRYOKU_MAPPING
 
 
@@ -77,7 +77,7 @@ MIRYOKU_X(NUM,    "Num") \
 MIRYOKU_X(SYM,    "Sym") \
 MIRYOKU_X(FUN,    "Fun") \
 MIRYOKU_X(CFG,    "Config") \
-// MIRYOKU_X(FGC,    "FGC") \
+MIRYOKU_X(FGC,    "FGC") \
 // MIRYOKU_X(QWERTY, "QWERTY") \
 
 #define U_BASE   0
@@ -91,5 +91,5 @@ MIRYOKU_X(CFG,    "Config") \
 #define U_SYM    8
 #define U_FUN    9
 #define U_CFG    10
-// #define U_FGC    11
+#define U_FGC    11
 // #define U_QWERTY 12
