@@ -2,12 +2,20 @@
 // https://github.com/manna-harbour/miryoku
 
 //QWERTY LAYER TO BE ADDED
-// #define MIRYOKU_LAYER_BASE \
-// &kp Q,             &kp W,             &kp E,             &kp R,             &kp T,             &kp Y,             &kp U,             &kp I,             &kp O,             &kp P,             \
-// &hm LGUI A,        &hm LALT S,        &hm LCTRL D,       &hm LSHFT F,       &kp G,             &kp H,             &hm LSHFT J,       &hm LCTRL K,       &hm LALT L,        &hm LGUI SQT,      \
-// &lt U_BUTTON Z,    &hm RALT X,        &kp C,             &kp V,             &kp B,             &kp N,             &kp M,             &kp COMMA,         &hm RALT DOT,      &lt U_BUTTON SLASH,\
-// U_NP,              U_NP,              &lt U_MEDIA ESC,   &lt U_NAV SPC,     &lt U_MOUSE TAB,   &lt U_SYM RET,     &lt U_NUM BSPC,    &lt U_FUN DEL,     U_NP,              U_NP
+#define MIRYOKU_LAYER_CFG \
+&kp Q,             &kp W,             &kp E,             &kp R,             &kp T,             &kp Y,             &kp U,             &kp I,             &kp O,             &kp P,             \
+&hm LGUI A,        &hm LALT S,        &hm LCTRL D,       &hm LSHFT F,       &kp G,             &kp H,             &hm LSHFT J,       &hm LCTRL K,       &hm LALT L,        &hm LGUI SQT,      \
+&lt U_BUTTON Z,    &hm RALT X,        &kp C,             &kp V,             &kp B,             &kp N,             &kp M,             &kp COMMA,         &hm RALT DOT,      &lt U_BUTTON SLASH,\
+U_NP,              U_NP,              &lt U_MEDIA ESC,   &lt U_NAV SPC,     &lt U_MOUSE TAB,   &lt U_SYM RET,     &lt U_NUM BSPC,    &lt U_FUN DEL,     U_NP,              U_NP
 
+// #define MIRYOKU_LAYER_CFG \
+// &mo 10,            &none,             &none,             &none,             &none,             &reset,            &mo 10,            &none,             &none, &none, &none, &tog 1,\
+// &none,             &none,             &none,             &none,             &none,             &none,             &none,             &none,             &none, &none, &none, &tog 2,\
+// &bt BT_CLR,        &bt BT_SEL 0,      &bt BT_SEL 1,      &bt BT_SEL 2,      &bt BT_SEL 3,     &bt BT_SEL 4,       &none,             &none,             &none, &none, &none, &none,\
+//                                                              &none, &none, &none,           &none, &none, &none
+
+
+#define MIRYOKU_LAYERMAPPING_CFG MIRYOKU_MAPPING
 
 //MIRYOKU LAYOUTMAPPING CORNE
 #define XXX &none
@@ -18,7 +26,7 @@
      K20, K21, K22, K23, K24,      K25, K26, K27, K28, K29, \
      N30, N31, K32, K33, K34,      K35, K36, K37, N38, N39 \
 ) \
-XXX     K00  K01  K02  K03  K04       K05  K06  K07  K08  K09  XXX \
+&mo 10     K00  K01  K02  K03  K04       K05  K06  K07  K08  K09  XXX \
 &kp RA(L)  K10  K11  K12  K13  K14       K15  K16  K17  K18  K19  &kp RA(W) \
 XXX        K20  K21  K22  K23  K24       K25  K26  K27  K28  K29  &kp RA(Z) \
                      K32  K33  K34       K35  K36  K37
@@ -49,6 +57,7 @@ MIRYOKU_X(MEDIA,  "Media") \
 MIRYOKU_X(NUM,    "Num") \
 MIRYOKU_X(SYM,    "Sym") \
 MIRYOKU_X(FUN,    "Fun") \
+MIRYOKU_X(CFG,    "Config") \
 
 #define U_BASE   0
 #define U_EXTRA  1
@@ -60,3 +69,4 @@ MIRYOKU_X(FUN,    "Fun") \
 #define U_NUM    7
 #define U_SYM    8
 #define U_FUN    9
+#define U_CFG    10
