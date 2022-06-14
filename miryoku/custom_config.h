@@ -4,19 +4,20 @@
 #define XXX &none
 
 /*LAYER LIST*/
-#define MIRYOKU_LAYER_LIST \
-MIRYOKU_X(BASE,   "Base") \
-MIRYOKU_X(QWERTY, "QWERTY") \
-MIRYOKU_X(EXTRA,  "Extra") \
-MIRYOKU_X(TAP,    "Tap") \
+#define MIRYOKU_LAYER_LIST  \
+MIRYOKU_X(BASE,   "Base")   \
+MIRYOKU_X(QWERTY, "qwerty") \
+MIRYOKU_X(EXTRA,  "Extra")  \
+MIRYOKU_X(TAP,    "Tap")    \
 MIRYOKU_X(BUTTON, "Button") \
-MIRYOKU_X(NAV,    "Nav") \
-MIRYOKU_X(MOUSE,  "Mouse") \
-MIRYOKU_X(MEDIA,  "Media") \
-MIRYOKU_X(NUM,    "Num") \
-MIRYOKU_X(SYM,    "Sym") \
-MIRYOKU_X(FUN,    "Fun") \
-MIRYOKU_X(FGC,    "FGC") \
+MIRYOKU_X(NAV,    "Nav")    \
+MIRYOKU_X(MOUSE,  "Mouse")  \
+MIRYOKU_X(MEDIA,  "Media")  \
+MIRYOKU_X(NUM,    "Num")    \
+MIRYOKU_X(SYM,    "Sym")    \
+MIRYOKU_X(FUN,    "Fun")    \
+MIRYOKU_X(FGC,    "FGC")    \
+MIRYOKU_X(GAME,   "Game")   \
 MIRYOKU_X(CFG,    "Config") \
 
 #define U_BASE   0
@@ -31,7 +32,8 @@ MIRYOKU_X(CFG,    "Config") \
 #define U_SYM    9
 #define U_FUN    10
 #define U_FGC    11
-#define U_CFG    12
+#define U_GAME   12
+#define U_CFG    13
 
 
 /*LAYERS*/
@@ -49,22 +51,37 @@ MIRYOKU_X(CFG,    "Config") \
 &lt U_BUTTON Z,    &hm RALT X,        &kp C,             &kp V,             &kp B,             &kp N,             &kp M,             &kp COMMA,         &hm RALT DOT,      &lt U_BUTTON SLASH,\
 &kp RA(L),         U_NP,              &lt U_MEDIA ESC,   &lt U_NAV SPC,     &lt U_MOUSE TAB,   &lt U_SYM RET,     &lt U_NUM BSPC,    &lt U_FUN DEL,     &kp RA(W),         &kp RA(Z)
 
+//Tap Qwerty layer for Amy
+#define MIRYOKU_LAYER_TAP \
+&kp Q,             &kp W,             &kp E,             &kp R,             &kp T,             &kp Y,             &kp U,             &kp I,             &kp O,             &kp P,             \
+&kp A,             &kp S,             &kp D,             &kp F,             &kp G,             &kp H,             &kp J,             &kp K,             &kp L,             &kp SQT,           \
+&kp Z,             &kp X,             &kp C,             &kp V,             &kp B,             &kp N,             &kp M,             &kp COMMA,         &kp DOT,           &kp SLASH,         \
+&kp RA(L),         U_NP,              &kp ESC,           &kp SPC,           &kp TAB,           &kp RET,           &kp BSPC,          &kp DEL,           &kp RA(W),         &kp RA(Z)
+
 //FGC layer
 #define MIRYOKU_LAYER_FGC \
-&kp N1,            &kp N2,            &kp N3,            &kp N4,            &kp N5,                  &kp N6,            &kp KP_NLCK,       &kp KP_SLASH,      &kp KP_ASTERISK,   &kp U,   \
-&kp Q,             &kp W,             &kp E,             &kp R,             &kp T,                   &kp Y,             &kp KP_N7,         &kp KP_N8,         &kp KP_N9,         &kp KP_PLUS,   \
-&kp A,             &kp S,             &kp D,             &kp F,             &kp G,                   &kp H,             &kp KP_N4,         &kp KP_N5,         &kp KP_N6,         &kp KP_DOT,   \
+&kp N1,            &kp N2,            &kp N3,            &kp N4,            &kp N5,                  &kp N6,            &kp KP_NLCK,       &kp KP_SLASH,      &kp KP_ASTERISK,   &kp U,      \
+&kp Q,             &kp W,             &kp E,             &kp R,             &kp T,                   &kp Y,             &kp KP_N7,         &kp KP_N8,         &kp KP_N9,         &kp KP_PLUS,\
+&kp A,             &kp S,             &kp D,             &kp F,             &kp G,                   &kp H,             &kp KP_N4,         &kp KP_N5,         &kp KP_N6,         &kp KP_DOT, \
 &kp TAB,           &kp LSHFT,         &kp LALT,          &kp SPC,           &kp DOWN,                &kp UP,            &kp RIGHT,         &kp F13,           &kp J,             &kp ENTER
+
+//Tap Qwerty layer for Amy
+#define MIRYOKU_LAYER_GAME \
+&kp Q,             &kp W,             &kp E,             &kp R,             &kp T,             &kp Y,             &kp U,             &kp I,             &kp O,             &kp P,            \
+&kp A,             &kp S,             &kp D,             &kp F,             &kp G,             &kp H,             &kp J,             &kp K,             &kp L,             &kp N0,           \
+&kp Z,             &kp X,             &kp C,             &kp V,             &kp B,             &kp N,             &kp M,             &kp COMMA,         &kp DOT,           &kp SLASH,        \
+&kp TAB,           &kp LSHFT,         &kp LALT,          &kp SPC,           &kp N1,            &kp N2,            &kp N3,            &kp ESC,           &kp LCTRL,         &kp ENTER
 
 //Config layer
 #define MIRYOKU_LAYER_CFG \
-XXX,               XXX,               XXX,               XXX,               &reset,                  &tog U_FGC,        &tog U_QWERTY,     XXX,               XXX,               XXX,   \
-XXX,               XXX,               XXX,               XXX,               XXX,                     XXX,               XXX,               XXX,               XXX,               XXX,   \
-&bt BT_SEL 0,      &bt BT_SEL 1,      &bt BT_SEL 2,      &bt BT_SEL 3,      &bt BT_SEL 4,            XXX,               XXX,               XXX,               XXX,               XXX,   \
-XXX,               &bt BT_CLR,        XXX,               XXX,               XXX,                     XXX,               XXX,               XXX,               XXX,               XXX
+XXX,               XXX,               XXX,               XXX,               &reset,            &tog U_FGC,        &tog U_QWERTY,     XXX,               XXX,               XXX,       \
+XXX,               XXX,               XXX,               XXX,               XXX,               XXX,               XXX,               XXX,               XXX,               XXX,       \
+&bt BT_SEL 0,      &bt BT_SEL 1,      &bt BT_SEL 2,      &bt BT_SEL 3,      &bt BT_SEL 4,      XXX,               XXX,               XXX,               XXX,               XXX,       \
+XXX,               &bt BT_CLR,        XXX,               XXX,               XXX,               XXX,               XXX,               XXX,               XXX,               XXX
 
 #define MIRYOKU_LAYERMAPPING_QWERTY MIRYOKU_MAPPING
 #define MIRYOKU_LAYERMAPPING_FGC MIRYOKU_MAPPING
+#define MIRYOKU_LAYERMAPPING_GAME MIRYOKU_MAPPING
 #define MIRYOKU_LAYERMAPPING_CFG MIRYOKU_MAPPING
 
 
