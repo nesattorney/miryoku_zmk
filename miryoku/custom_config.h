@@ -74,7 +74,7 @@ MIRYOKU_X(CFG,    "Config") \
 
 //Config layer
 #define MIRYOKU_LAYER_CFG \
-XXX,               XXX,               XXX,               XXX,               &reset,            &tog U_FGC,        &tog U_QWERTY,     XXX,               XXX,               XXX,       \
+XXX,               XXX,               XXX,               XXX,               &reset,            &tog U_FGC,        &tog U_QWERTY,     &tog U_GAME,       XXX,               XXX,       \
 XXX,               XXX,               XXX,               XXX,               XXX,               XXX,               XXX,               XXX,               XXX,               XXX,       \
 &bt BT_SEL 0,      &bt BT_SEL 1,      &bt BT_SEL 2,      &bt BT_SEL 3,      &bt BT_SEL 4,      XXX,               XXX,               XXX,               XXX,               XXX,       \
 XXX,               &bt BT_CLR,        XXX,               XXX,               XXX,               XXX,               XXX,               XXX,               XXX,               XXX
