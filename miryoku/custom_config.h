@@ -17,6 +17,7 @@ MIRYOKU_X(NUM,    "Num")    \
 MIRYOKU_X(SYM,    "Sym")    \
 MIRYOKU_X(FUN,    "Fun")    \
 MIRYOKU_X(FGC,    "FGC")    \
+MIRYOKU_X(FGC,    "FGC2")    \
 MIRYOKU_X(GAME,   "Game")   \
 MIRYOKU_X(CFG,    "Config") \
 
@@ -32,8 +33,9 @@ MIRYOKU_X(CFG,    "Config") \
 #define U_SYM    9
 #define U_FUN    10
 #define U_FGC    11
-#define U_GAME   12
-#define U_CFG    13
+#define U_FGC2   12
+#define U_GAME   13
+#define U_CFG    14
 
 
 /*LAYERS*/
@@ -65,6 +67,13 @@ MIRYOKU_X(CFG,    "Config") \
 &kp A,             &kp S,             &kp D,             &kp F,             &kp G,                   &kp H,             &kp KP_N4,         &kp KP_N5,         &kp KP_N6,         &kp KP_DOT, \
 &kp TAB,           &kp LSHFT,         &kp LALT,          &kp SPC,           &kp DOWN,                &kp UP,            &kp RIGHT,         &kp F13,           &kp J,             &kp ENTER
 
+//FGC2 layer
+#define MIRYOKU_LAYER_FGC2 \
+&kp N1,            &kp N2,            &kp N3,            &kp N4,            &kp N5,                  &kp N6,            &kp KP_NLCK,       &kp KP_SLASH,      &kp KP_ASTERISK,   &kp U,      \
+&kp Q,             &kp W,             &kp E,             &kp R,             &kp T,                   &kp Y,             &kp KP_N7,         &kp KP_N8,         &kp KP_N9,         &kp KP_PLUS,\
+&kp A,             &kp S,             &kp D,             &kp F,             &kp G,                   &kp H,             &kp KP_N4,         &kp KP_N5,         &kp KP_N6,         &kp KP_DOT, \
+&kp TAB,           &kp LSHFT,         &kp LALT,          &kp SPC,           &kp DOWN,                &kp UP,            &kp RIGHT,         &kp F13,           &kp J,             &kp ENTER
+
 //Tap Qwerty layer for Amy
 #define MIRYOKU_LAYER_GAME \
 &kp Q,             &kp W,             &kp E,             &kp R,             &kp T,             &kp Y,             &kp U,             &kp I,             &kp O,             &kp P,            \
@@ -74,13 +83,14 @@ MIRYOKU_X(CFG,    "Config") \
 
 //Config layer
 #define MIRYOKU_LAYER_CFG \
-XXX,               XXX,               XXX,               XXX,               &reset,            &tog U_FGC,        &tog U_QWERTY,     &tog U_GAME,       XXX,               XXX,       \
-XXX,               XXX,               XXX,               XXX,               XXX,               XXX,               XXX,               XXX,               XXX,               XXX,       \
-&bt BT_SEL 0,      &bt BT_SEL 1,      &bt BT_SEL 2,      &bt BT_SEL 3,      &bt BT_SEL 4,      XXX,               XXX,               XXX,               XXX,               XXX,       \
-XXX,               &bt BT_CLR,        XXX,               XXX,               XXX,               XXX,               XXX,               XXX,               XXX,               XXX
+XXX,               XXX,               XXX,               XXX,               &reset,            &tog U_FGC,        &tog U_QWERTY,     &tog U_GAME,       &tog U_FGC2,               XXX,       \
+XXX,               XXX,               XXX,               XXX,               XXX,               XXX,               XXX,               XXX,               XXX,                       XXX,       \
+&bt BT_SEL 0,      &bt BT_SEL 1,      &bt BT_SEL 2,      &bt BT_SEL 3,      &bt BT_SEL 4,      XXX,               XXX,               XXX,               XXX,                       XXX,       \
+XXX,               &bt BT_CLR,        XXX,               XXX,               XXX,               XXX,               XXX,               XXX,               XXX,                       XXX
 
 #define MIRYOKU_LAYERMAPPING_QWERTY MIRYOKU_MAPPING
 #define MIRYOKU_LAYERMAPPING_FGC MIRYOKU_MAPPING
+#define MIRYOKU_LAYERMAPPING_FGC2 MIRYOKU_MAPPING
 #define MIRYOKU_LAYERMAPPING_GAME MIRYOKU_MAPPING
 #define MIRYOKU_LAYERMAPPING_CFG MIRYOKU_MAPPING
 
