@@ -17,7 +17,7 @@ MIRYOKU_X(NUM,    "Num")    \
 MIRYOKU_X(SYM,    "Sym")    \
 MIRYOKU_X(FUN,    "Fun")    \
 MIRYOKU_X(FGC,    "FGC")    \
-MIRYOKU_X(FGC,    "FGC2")    \
+MIRYOKU_X(FGC2,   "FGC2")  \
 MIRYOKU_X(GAME,   "Game")   \
 MIRYOKU_X(CFG,    "Config") \
 
